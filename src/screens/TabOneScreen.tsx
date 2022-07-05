@@ -3,13 +3,14 @@ import {StyleSheet} from "react-native";
 import EditScreenInfo from "../components/EditScreenInfo";
 import {Text, View} from "react-native";
 import {RootTabScreenProps} from "../../types";
+import { TextStyles } from "../styles";
 
 export default function TabOneScreen({
   navigation,
 }: RootTabScreenProps<"TabOne">) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
+      <Text style={TextStyles.TEXT_STYLE_6}>Tab One</Text>
       <View style={styles.separator} />
       <EditScreenInfo path="/screens/TabOneScreen.tsx" />
     </View>
