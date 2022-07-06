@@ -15,7 +15,9 @@ export default function useCachedResources() {
         // Load fonts
         await Font.loadAsync({
           ...FontAwesome.font,
-          ProximaNovaA: require("../assets/fonts/ProximaNovaAlt-Regular.ttf"),
+          "proxima-semibold": require("../assets/fonts/ProximaNovaAlt-Semibold.ttf"),
+          "proxima-regular": require("../assets/fonts/ProximaNovaAlt-Regular.ttf"),
+          "proxima-bold": require("../assets/fonts/ProximaNovaAlt-Bold.ttf"),
         });
       } catch (e) {
         // We might want to provide this error information to an error reporting service

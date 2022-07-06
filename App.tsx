@@ -11,8 +11,8 @@ export default function App() {
   } else {
     return (
       <SafeAreaProvider>
+        <StatusBar style={"light"} />
         <Navigation />
-        <StatusBar />
       </SafeAreaProvider>
     );
   }

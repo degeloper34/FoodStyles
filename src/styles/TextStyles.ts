@@ -3,7 +3,6 @@ import Colors from "./Colors";
 
 export default StyleSheet.create({
   TEXT_STYLE: {
-    fontFamily: "ProximaNovaA",
     fontSize: 16,
     fontWeight: "600",
     fontStyle: "normal",
@@ -11,7 +10,6 @@ export default StyleSheet.create({
     color: Colors.WHITE,
   },
   TEXT_STYLE_2: {
-    fontFamily: "ProximaNovaA",
     fontSize: 16,
     fontWeight: "600",
     fontStyle: "normal",
@@ -21,7 +19,6 @@ export default StyleSheet.create({
     color: Colors.GREYISH_BROWN,
   },
   TEXT_STYLE_3: {
-    fontFamily: "ProximaNovaA",
     fontSize: 18,
     fontWeight: "normal",
     fontStyle: "normal",
@@ -31,7 +28,6 @@ export default StyleSheet.create({
     color: Colors.WHITE,
   },
   TEXT_STYLE_4: {
-    fontFamily: "ProximaNovaA",
     fontSize: 13,
     fontWeight: "600",
     fontStyle: "normal",
@@ -40,7 +36,6 @@ export default StyleSheet.create({
     color: Colors.WHITE,
   },
   TEXT_STYLE_5: {
-    fontFamily: "ProximaNovaA",
     fontSize: 20,
     fontWeight: "bold",
     fontStyle: "normal",
@@ -50,7 +45,6 @@ export default StyleSheet.create({
     color: Colors.WHITE,
   },
   TEXT_STYLE_6: {
-    fontFamily: "ProximaNovaA",
     fontSize: 18,
     fontWeight: "bold",
     fontStyle: "normal",
@@ -59,11 +53,19 @@ export default StyleSheet.create({
     color: Colors.GREYISH_BROWN,
   },
   TEXT_STYLE_7: {
-    fontFamily: "ProximaNovaA",
     fontSize: 18,
     fontWeight: "bold",
     fontStyle: "normal",
     letterSpacing: 0,
     color: Colors.GREYISH_BROWN,
+  },
+  //TextStyle for the title FoodStyles on the GuestScreen
+  TEXT_STYLE_8: {
+    fontSize: 32,
+    fontWeight: "bold",
+    fontStyle: "normal",
+    letterSpacing: 0,
+    textAlign: "center",
+    color: Colors.WHITE,
   },
 });
