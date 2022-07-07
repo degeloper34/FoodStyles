@@ -4,6 +4,8 @@ import {LogBox} from "react-native";
 import {SafeAreaProvider} from "react-native-safe-area-context";
 import useCachedResources from "./src/hooks/useCachedResources";
 import MainNavigator from "./src/navigation/MainNavigator";
+import {Provider} from "react-redux";
+import {store} from "./src/store";
 
 LogBox.ignoreAllLogs();
 
@@ -26,10 +28,13 @@ export default function App() {
   } else {
     return (
       <ApolloProvider client={client}>
-        <SafeAreaProvider>
-          <StatusBar style={"light"} />
-          <MainNavigator />
-        </SafeAreaProvider>
+        <Provider store={store}>
+          <SafeAreaProvider>
+            <StatusBar style={"light"} />
+
+            <MainNavigator />
+          </SafeAreaProvider>
+        </Provider>
       </ApolloProvider>
     );
   }

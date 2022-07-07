@@ -32,6 +32,7 @@ export default function LoginScreen({
     await loginWithEmail({
       variables: {email: form.email, password: form.password},
     });
+
     navigation.navigate("HomeNavigator");
   };
 
