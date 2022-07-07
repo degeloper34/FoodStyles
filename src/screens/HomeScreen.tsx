@@ -5,6 +5,8 @@ import {Card, RootStackScreenProps} from "../../types";
 import {GET_CARDS_QUERY} from "../graphql/queries";
 import {CustomText, Loading} from "../components/atoms";
 import {Colors, Spacing, TextStyles} from "../styles";
+import {useAppSelector} from "../hooks/useRedux";
+import {useLayoutEffect} from "react";
 
 export default function HomeScreen({
   navigation,
@@ -12,6 +14,14 @@ export default function HomeScreen({
   const onPressNewFoodStyle = () => {
     navigation.navigate("ModalScreen");
   };
+
+  const {member} = useAppSelector((state) => state?.memberReducers);
+
+  useLayoutEffect(() => {
+    navigation.setOptions({
+      headerTitle: "Welcome " + member?.name,
+    });
+  }, [navigation]);
 
   const {data, loading} = useQuery(GET_CARDS_QUERY);
 

@@ -4,10 +4,16 @@ import {Colors, Spacing, TextStyles} from "../styles";
 import {useHeaderHeight} from "@react-navigation/elements";
 import {CustomText, Loading} from "../components/atoms";
 import {useMutation} from "@apollo/client";
-import {LoginForm, RootStackScreenProps} from "../../types";
+import {
+  LoginForm,
+  LoginWithEmailResponseModel,
+  RootStackScreenProps,
+} from "../../types";
 import {CustomTextInput} from "../components/molecules";
 import {Controller, useForm} from "react-hook-form";
 import {LOGIN_WITH_EMAIL_MUTATION} from "../graphql/mutations";
+import {useAppDispatch} from "../hooks/useRedux";
+import {memberLogin, setMember} from "../store/actions";
 
 export default function LoginScreen({
   navigation,
@@ -22,6 +28,14 @@ export default function LoginScreen({
     },
   });
 
+  // const {musicVideoList, genreList, loading} = useAppSelector(
+  //   (state) => state?.musicVideoReducer
+  // );
+
+  const dispatch = useAppDispatch();
+  const setMemberData = (responseLoginWithEmail: LoginWithEmailResponseModel) =>
+    dispatch(setMember(responseLoginWithEmail));
+
   const [loginWithEmail, {loading, error}] = useMutation(
     LOGIN_WITH_EMAIL_MUTATION
   );
@@ -29,9 +43,12 @@ export default function LoginScreen({
   const onPressLogIn = async (form: LoginForm) => {
     Keyboard.dismiss();
 
-    await loginWithEmail({
+    const {data} = await loginWithEmail({
       variables: {email: form.email, password: form.password},
     });
+    console.log("data", data);
+
+    setMemberData(data?.loginWithEmail);
 
     navigation.navigate("HomeNavigator");
   };

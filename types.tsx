@@ -43,3 +43,18 @@ export type Card = {
 };
 
 export type CardList = Card[];
+
+export type LoginWithEmailResponseModel = {
+  accessToken?: string;
+  refreshToken?: string;
+  user: User;
+};
+
+export type User = {
+  id: string;
+  name: string;
+  email: string;
+  appleId?: string;
+  facebookId?: string;
+  googleId?: string;
+};

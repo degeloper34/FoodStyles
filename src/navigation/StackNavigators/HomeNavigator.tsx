@@ -5,6 +5,7 @@ import {HeaderBackIcon} from "../../components/atoms";
 import ActionsModal from "../../screens/ActionsModal";
 import HomeScreen from "../../screens/HomeScreen";
 import ModalScreen from "../../screens/ModalScreen";
+import {Colors} from "../../styles";
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -16,7 +17,9 @@ export default () => {
         component={HomeScreen}
         options={() => ({
           headerTransparent: true,
-          headerTitle: "",
+          headerTitleStyle: {
+            color: Colors.WHITE,
+          },
           headerLeft: () => (
             <Image source={require("../../assets/images/logo.png")} />
           ),

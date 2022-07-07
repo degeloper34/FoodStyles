@@ -1,2 +1,2 @@
-export const SET_TEST = "SET_TEST";
-export const GET_TEST = "GET_TEST";
+//Member
+export const SET_MEMBER = "SET_MEMBER";

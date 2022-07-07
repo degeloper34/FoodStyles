@@ -1,8 +1,9 @@
-import {SET_TEST} from "./actionTypes";
+import {LoginWithEmailResponseModel} from "../../../types";
+import {SET_MEMBER} from "./actionTypes";
 
-export const test = (payload: number) => {
+export const setMember = (payload: LoginWithEmailResponseModel) => {
   return {
-    type: SET_TEST,
+    type: SET_MEMBER,
     payload,
   };
 };
