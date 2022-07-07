@@ -1,0 +1,315 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActionsModal Tests HomeScreen | Render without issues 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "flex": 3,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+          },
+          Object {
+            "backgroundColor": "transparent",
+            "flex": 1,
+          },
+        ]
+      }
+    >
+      <ViewManagerAdapter_ExpoBlurView
+        proxiedProperties={
+          Object {
+            "intensity": 20,
+            "tint": "default",
+          }
+        }
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      />
+    </View>
+  </View>
+  <ViewManagerAdapter_ExpoLinearGradient
+    proxiedProperties={
+      Object {
+        "colors": Array [
+          4294604613,
+          4294165570,
+        ],
+        "endPoint": undefined,
+        "locations": undefined,
+        "startPoint": undefined,
+      }
+    }
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "padding": 16,
+        }
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        numberOfLines={2}
+        style={
+          Array [
+            Array [
+              Object {
+                "textAlign": "center",
+              },
+              Object {
+                "color": "#434343",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "bold",
+                "letterSpacing": 0,
+                "lineHeight": 22,
+              },
+            ],
+            Object {
+              "fontFamily": "proxima-semibold",
+              "textDecorationLine": "none",
+            },
+          ]
+        }
+      >
+        Test
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+        />
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "#434343",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "bold",
+                "letterSpacing": 0,
+                "lineHeight": 22,
+              },
+              Object {
+                "fontFamily": "proxima-semibold",
+                "textDecorationLine": "none",
+              },
+            ]
+          }
+        >
+          Back
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+        >
+          <Image
+            source={1}
+          />
+        </View>
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "#434343",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "bold",
+                "letterSpacing": 0,
+                "lineHeight": 22,
+              },
+              Object {
+                "fontFamily": "proxima-semibold",
+                "textDecorationLine": "none",
+              },
+            ]
+          }
+        >
+          Share
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+        >
+          <Image
+            source={1}
+          />
+        </View>
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "#434343",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "bold",
+                "letterSpacing": 0,
+                "lineHeight": 22,
+              },
+              Object {
+                "fontFamily": "proxima-semibold",
+                "textDecorationLine": "none",
+              },
+            ]
+          }
+        >
+          Duplicate
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+        >
+          <Image
+            source={1}
+          />
+        </View>
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "#434343",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "bold",
+                "letterSpacing": 0,
+                "lineHeight": 22,
+              },
+              Object {
+                "fontFamily": "proxima-semibold",
+                "textDecorationLine": "none",
+              },
+            ]
+          }
+        >
+          Delete
+        </Text>
+      </View>
+    </View>
+  </ViewManagerAdapter_ExpoLinearGradient>
+</View>
+`;

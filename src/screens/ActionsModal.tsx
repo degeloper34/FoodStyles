@@ -9,7 +9,7 @@ import {
   SHARE_CARD_MUTATION,
 } from "../graphql/mutations";
 import {RootStackScreenProps} from "../../types";
-import {client} from "../../App";
+import {apolloClient} from "../../App";
 import {GET_CARDS_QUERY} from "../graphql/queries";
 import {BlurView} from "expo-blur";
 import {Ionicons} from "@expo/vector-icons";
@@ -18,7 +18,7 @@ export default function ActionsModal({
   navigation,
   route,
 }: RootStackScreenProps<"ActionsModal">) {
-  const {item} = route.params;
+  const {item} = route?.params;
 
   const [share] = useMutation(SHARE_CARD_MUTATION);
   const [duplicate] = useMutation(DUPLICATE_CARD_MUTATION);
@@ -29,7 +29,7 @@ export default function ActionsModal({
   };
 
   const onPressShare = async () => {
-    await share({variables: {id: item.id}});
+    await share({variables: {id: item?.id}});
 
     await Share.share({
       message: item?.name,
@@ -37,7 +37,7 @@ export default function ActionsModal({
   };
 
   const onPressDuplicate = async () => {
-    await duplicate({variables: {id: item.id}});
+    await duplicate({variables: {id: item?.id}});
     await reFetchCards();
 
     navigation.pop();
@@ -59,14 +59,14 @@ export default function ActionsModal({
   };
 
   const onPressDelete = async () => {
-    await remove({variables: {id: item.id}});
+    await remove({variables: {id: item?.id}});
     await reFetchCards();
 
     navigation.pop();
   };
 
   const reFetchCards = async () => {
-    await client.refetchQueries({
+    await apolloClient.refetchQueries({
       include: [GET_CARDS_QUERY],
     });
   };
@@ -94,7 +94,7 @@ export default function ActionsModal({
       >
         <View style={viewCardName}>
           <CustomText
-            text={item.name}
+            text={item?.name}
             type={"semi-bold"}
             style={[txtName, TextStyles.TEXT_STYLE_6]}
             numberOfLines={2}

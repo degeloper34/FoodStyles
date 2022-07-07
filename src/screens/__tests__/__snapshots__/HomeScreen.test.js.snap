@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeScreen Tests HomeScreen | Render without issues 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <ActivityIndicator
+    color="#ffffff"
+    size="large"
+    style={
+      Object {
+        "backgroundColor": "rgba(0, 0, 0, 0.7)",
+        "bottom": 0,
+        "flex": 1,
+        "justifyContent": "center",
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "zIndex": 2,
+      }
+    }
+  />
+  <ViewManagerAdapter_ExpoLinearGradient
+    proxiedProperties={
+      Object {
+        "colors": Array [
+          4294604613,
+          4294165570,
+          4294506744,
+        ],
+        "endPoint": undefined,
+        "locations": undefined,
+        "startPoint": undefined,
+      }
+    }
+    style={
+      Object {
+        "flex": 2,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "backgroundColor": "rgb(248, 248, 248)",
+        "flex": 9,
+      }
+    }
+  >
+    <RCTScrollView
+      contentContainerStyle={
+        Object {
+          "paddingBottom": 20,
+          "paddingHorizontal": 20,
+        }
+      }
+      getItem={[Function]}
+      getItemCount={[Function]}
+      initialNumToRender={10}
+      keyExtractor={[Function]}
+      onContentSizeChange={[Function]}
+      onLayout={[Function]}
+      onMomentumScrollBegin={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      removeClippedSubviews={false}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      showsVerticalScrollIndicator={false}
+      stickyHeaderIndices={Array []}
+      viewabilityConfigCallbackPairs={Array []}
+    >
+      <View />
+    </RCTScrollView>
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "white",
+        "flex": 1,
+        "shadowColor": "rgba(0, 0, 0, 0.1)",
+        "shadowOffset": Object {
+          "height": 0,
+          "width": 0,
+        },
+        "shadowOpacity": 1,
+        "shadowRadius": 15,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#ffffff",
+          "borderRadius": 6,
+          "bottom": 40,
+          "flexDirection": "row",
+          "left": 0,
+          "marginHorizontal": 20,
+          "padding": 8,
+          "position": "absolute",
+          "right": 0,
+          "shadowColor": "rgba(176, 176, 176, 0.4)",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 7,
+        }
+      }
+    >
+      <Image
+        source={1}
+      />
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "#434343",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "bold",
+              "letterSpacing": 0,
+            },
+            Object {
+              "fontFamily": "proxima-bold",
+              "textDecorationLine": "none",
+            },
+          ]
+        }
+      >
+        New Food Style
+      </Text>
+    </View>
+  </View>
+</View>
+`;

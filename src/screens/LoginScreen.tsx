@@ -1,7 +1,6 @@
 import {LinearGradient} from "expo-linear-gradient";
 import {Keyboard, Pressable, StyleSheet, View} from "react-native";
-import {Colors, Spacing, TextStyles} from "../styles";
-import {useHeaderHeight} from "@react-navigation/elements";
+import {Spacing, TextStyles} from "../styles";
 import {CustomText, Loading} from "../components/atoms";
 import {useMutation} from "@apollo/client";
 import {
@@ -12,8 +11,9 @@ import {
 import {CustomTextInput} from "../components/molecules";
 import {Controller, useForm} from "react-hook-form";
 import {LOGIN_WITH_EMAIL_MUTATION} from "../graphql/mutations";
+import {useHeaderHeight} from "@react-navigation/elements";
 import {useAppDispatch} from "../hooks/useRedux";
-import {memberLogin, setMember} from "../store/actions";
+import {setMember} from "../store/actions";
 
 export default function LoginScreen({
   navigation,
@@ -27,10 +27,6 @@ export default function LoginScreen({
       password: __DEV__ ? "123456" : "",
     },
   });
-
-  // const {musicVideoList, genreList, loading} = useAppSelector(
-  //   (state) => state?.musicVideoReducer
-  // );
 
   const dispatch = useAppDispatch();
   const setMemberData = (responseLoginWithEmail: LoginWithEmailResponseModel) =>
@@ -46,7 +42,6 @@ export default function LoginScreen({
     const {data} = await loginWithEmail({
       variables: {email: form.email, password: form.password},
     });
-    console.log("data", data);
 
     setMemberData(data?.loginWithEmail);
 

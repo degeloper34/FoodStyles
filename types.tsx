@@ -15,7 +15,7 @@ export type RootStackParamList = {
   GuestNavigator: undefined;
   HomeNavigator: undefined;
   HomeScreen: undefined;
-  ActionsModal: {item: any};
+  ActionsModal: {item: Card};
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> =

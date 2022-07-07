@@ -11,7 +11,11 @@
     "test": "jest --watchAll"
   },
   "jest": {
-    "preset": "jest-expo"
+    "preset": "jest-expo",
+    "setupFilesAfterEnv": [
+      "./jest.setup.js"
+    ],
+    "testRegex": "/*.test.js$"
   },
   "dependencies": {
     "@apollo/client": "^3.6.9",
@@ -20,6 +24,7 @@
     "@react-navigation/native": "^6.0.2",
     "@react-navigation/native-stack": "^6.1.0",
     "babel-plugin-dotenv-import": "^2.2.0",
+    "cross-fetch": "^3.1.5",
     "expo": "~45.0.0",
     "expo-asset": "~8.5.0",
     "expo-blur": "~11.1.0",

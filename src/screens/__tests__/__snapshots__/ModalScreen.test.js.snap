@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModalScreen Tests ModalScreen | Render without issues 1`] = `
+<ViewManagerAdapter_ExpoLinearGradient
+  proxiedProperties={
+    Object {
+      "colors": Array [
+        4294604613,
+        4294165570,
+      ],
+      "endPoint": undefined,
+      "locations": undefined,
+      "startPoint": undefined,
+    }
+  }
+  style={
+    Object {
+      "flex": 1,
+      "paddingHorizontal": 32,
+      "paddingTop": 100,
+    }
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "#ffffff",
+          "fontSize": 16,
+          "fontStyle": "normal",
+          "fontWeight": "600",
+          "letterSpacing": 0,
+        },
+        Object {
+          "fontFamily": "proxima-semibold",
+          "textDecorationLine": "none",
+        },
+      ]
+    }
+  >
+    Name
+  </Text>
+  <TextInput
+    maxLength={50}
+    onChangeText={[Function]}
+    secureTextEntry={false}
+    style={
+      Object {
+        "backgroundColor": "white",
+        "borderRadius": 4,
+        "fontFamily": "proxima-regular",
+        "marginBottom": 16,
+        "marginTop": 8,
+        "paddingHorizontal": 8,
+        "paddingVertical": 12,
+      }
+    }
+    value=""
+  />
+  <View
+    accessibilityState={
+      Object {
+        "disabled": true,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "rgb(17,206,144)",
+        "borderRadius": 100,
+        "marginHorizontal": 80,
+        "paddingVertical": 12,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        Array [
+          Object {
+            "color": "#ffffff",
+            "fontSize": 16,
+            "fontStyle": "normal",
+            "fontWeight": "600",
+            "letterSpacing": 0,
+          },
+          Object {
+            "fontFamily": "proxima-bold",
+            "textDecorationLine": "none",
+          },
+        ]
+      }
+    >
+      CREATE
+    </Text>
+  </View>
+</ViewManagerAdapter_ExpoLinearGradient>
+`;
