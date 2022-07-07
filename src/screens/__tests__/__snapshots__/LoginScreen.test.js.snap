@@ -56,7 +56,7 @@ exports[`LoginScreen Tests LoginScreen | Render without issues 1`] = `
         "paddingVertical": 12,
       }
     }
-    value="ege@akyurek.com"
+    value="ege@baris.com"
   />
   <Text
     allowFontScaling={false}

@@ -7,7 +7,7 @@ import {CREATE_CARD_MUTATION} from "../graphql/mutations";
 import {Controller, useForm} from "react-hook-form";
 import {CustomTextInput} from "../components/molecules";
 import {CreateCardForm, RootStackScreenProps} from "../../types";
-import {client} from "../../App";
+import {apolloClient} from "../../App";
 import {GET_CARDS_QUERY} from "../graphql/queries";
 
 export default function ModalScreen({
@@ -25,7 +25,7 @@ export default function ModalScreen({
   const onPressCreate = async (form: CreateCardForm) => {
     await createCard({variables: {name: form.name}});
 
-    await client.refetchQueries({
+    await apolloClient.refetchQueries({
       include: [GET_CARDS_QUERY],
     });
     navigation.pop();

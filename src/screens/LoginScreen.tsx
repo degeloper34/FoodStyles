@@ -23,7 +23,7 @@ export default function LoginScreen({
   const {handleSubmit, control, formState} = useForm<LoginForm>({
     mode: "onChange",
     defaultValues: {
-      email: __DEV__ ? "ege@akyurek.com" : "",
+      email: __DEV__ ? "ege@baris.com" : "",
       password: __DEV__ ? "123456" : "",
     },
   });
@@ -70,6 +70,7 @@ export default function LoginScreen({
             value={value}
             onChangeText={onChange}
             maxLength={50}
+            keyboardType={"email-address"}
           />
         )}
       />

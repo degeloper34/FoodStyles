@@ -1,4 +1,9 @@
-import {StyleSheet, TextInput, TextInputProps} from "react-native";
+import {
+  KeyboardType,
+  StyleSheet,
+  TextInput,
+  TextInputProps,
+} from "react-native";
 import {Spacing, TextStyles} from "../../styles";
 import {CustomText} from "../atoms";
 
@@ -7,6 +12,7 @@ interface IProps extends TextInputProps {
   value: string;
   secureTextEntry?: boolean;
   maxLength?: number;
+  keyboardType?: KeyboardType;
 }
 
 export function CustomTextInput({
@@ -15,6 +21,7 @@ export function CustomTextInput({
   onChangeText,
   secureTextEntry = false,
   maxLength,
+  keyboardType,
 }: IProps) {
   return (
     <>
@@ -29,6 +36,7 @@ export function CustomTextInput({
         style={styles.txtInput}
         secureTextEntry={secureTextEntry}
         maxLength={maxLength}
+        keyboardType={keyboardType}
       />
     </>
   );
