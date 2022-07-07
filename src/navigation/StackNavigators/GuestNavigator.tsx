@@ -1,7 +1,6 @@
-import {Ionicons} from "@expo/vector-icons";
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
-import {Pressable} from "react-native";
 import {RootStackParamList, RootStackScreenProps} from "../../../types";
+import {HeaderBackIcon} from "../../components/atoms";
 import GuestScreen from "../../screens/GuestScreen";
 import LoginScreen from "../../screens/LoginScreen";
 import SignUpScreen from "../../screens/SignUpScreen";
@@ -27,15 +26,7 @@ export default () => {
             fontFamily: "proxima-bold",
             ...TextStyles.TEXT_STYLE_5,
           },
-          headerLeft: () => (
-            <Pressable onPress={() => navigation.goBack()}>
-              <Ionicons
-                name="chevron-back-circle-sharp"
-                size={41}
-                color="white"
-              />
-            </Pressable>
-          ),
+          headerLeft: () => <HeaderBackIcon navigation={navigation} />,
         })}
       />
       <Stack.Screen
@@ -48,15 +39,7 @@ export default () => {
             fontFamily: "proxima-bold",
             ...TextStyles.TEXT_STYLE_5,
           },
-          headerLeft: () => (
-            <Pressable onPress={() => navigation.goBack()}>
-              <Ionicons
-                name="chevron-back-circle-sharp"
-                size={41}
-                color="white"
-              />
-            </Pressable>
-          ),
+          headerLeft: () => <HeaderBackIcon navigation={navigation} />,
         })}
       />
     </Stack.Navigator>

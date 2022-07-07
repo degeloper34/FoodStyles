@@ -1,5 +1,5 @@
-import {TextInput, TextInputProps} from "react-native";
-import {TextStyles} from "../../styles";
+import {StyleSheet, TextInput, TextInputProps} from "react-native";
+import {Spacing, TextStyles} from "../../styles";
 import {CustomText} from "../atoms";
 
 interface IProps extends TextInputProps {
@@ -26,18 +26,22 @@ export function CustomTextInput({
       <TextInput
         value={value}
         onChangeText={onChangeText}
-        style={{
-          backgroundColor: "white",
-          paddingVertical: 12,
-          paddingHorizontal: 8,
-          marginTop: 8,
-          marginBottom: 16,
-          borderRadius: 4,
-          fontFamily: "proxima-regular",
-        }}
+        style={styles.txtInput}
         secureTextEntry={secureTextEntry}
         maxLength={maxLength}
       />
     </>
   );
 }
+
+const styles = StyleSheet.create({
+  txtInput: {
+    backgroundColor: "white",
+    paddingVertical: Spacing.s,
+    paddingHorizontal: Spacing.xs,
+    marginTop: Spacing.xs,
+    marginBottom: Spacing.m,
+    borderRadius: 4,
+    fontFamily: "proxima-regular",
+  },
+});

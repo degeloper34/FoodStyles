@@ -2,6 +2,7 @@ import {Ionicons} from "@expo/vector-icons";
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
 import {Image, Pressable} from "react-native";
 import {RootStackParamList, RootStackScreenProps} from "../../../types";
+import {HeaderBackIcon} from "../../components/atoms";
 import ActionsModal from "../../screens/ActionsModal";
 import HomeScreen from "../../screens/HomeScreen";
 import ModalScreen from "../../screens/ModalScreen";
@@ -14,7 +15,7 @@ export default () => {
       <Stack.Screen
         name="HomeScreen"
         component={HomeScreen}
-        options={({navigation}: RootStackScreenProps<"HomeScreen">) => ({
+        options={() => ({
           headerTransparent: true,
           headerTitle: "",
           headerLeft: () => (
@@ -33,22 +34,14 @@ export default () => {
           headerTitleStyle: {
             color: "white",
           },
-          headerLeft: () => (
-            <Pressable onPress={() => navigation.goBack()}>
-              <Ionicons
-                name="chevron-back-circle-sharp"
-                size={41}
-                color="white"
-              />
-            </Pressable>
-          ),
+          headerLeft: () => <HeaderBackIcon navigation={navigation} />,
         })}
       />
 
       <Stack.Screen
         name="ActionsModal"
         component={ActionsModal}
-        options={({navigation}: RootStackScreenProps<"ActionsModal">) => ({
+        options={() => ({
           presentation: "containedTransparentModal",
           headerShown: false,
           animation: "fade",
