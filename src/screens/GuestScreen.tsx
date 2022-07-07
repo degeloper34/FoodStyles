@@ -16,25 +16,34 @@ export default function GuestScreen({
     navigation.navigate("LoginScreen");
   };
 
-  const {container, btnSignIn} = styles;
+  const {
+    container,
+    viewHeader,
+    viewLogo,
+    imgLogo,
+    viewFoodStyles,
+    viewWelcomeText,
+    viewAuthOptions,
+    iconSocial,
+    btnLogIn,
+    btnSignIn,
+    viewTerms,
+  } = styles;
 
   return (
     <LinearGradient
       colors={["rgb(250,119,69)", "rgb(243, 196, 66)"]}
       style={container}
     >
-      <View style={{flex: 1}} />
+      <View style={viewHeader} />
 
-      <View style={{flex: 2, alignItems: "center"}}>
+      <View style={viewLogo}>
         <Image
           source={require("../assets/images/logo.png")}
-          style={{
-            width: 71,
-            height: 84,
-          }}
+          style={imgLogo}
           resizeMode={"contain"}
         />
-        <View style={{flex: 1, justifyContent: "center"}}>
+        <View style={viewFoodStyles}>
           <CustomText
             style={TextStyles.TEXT_STYLE_8}
             text={"FoodStyles"}
@@ -42,7 +51,7 @@ export default function GuestScreen({
           />
         </View>
 
-        <View style={{flex: 2, justifyContent: "center"}}>
+        <View style={viewWelcomeText}>
           <CustomText
             style={TextStyles.TEXT_STYLE_3}
             text={"Sign in to be able to save your\rpreferences and settings."}
@@ -51,13 +60,13 @@ export default function GuestScreen({
         </View>
       </View>
 
-      <View style={{flex: 3, paddingHorizontal: 70}}>
+      <View style={viewAuthOptions}>
         <Pressable style={btnSignIn}>
           <FontAwesome
             name="apple"
             size={20}
             color={Colors.GREYISH_BROWN}
-            style={{marginRight: Spacing.s}}
+            style={iconSocial}
           />
           <CustomText
             style={TextStyles.TEXT_STYLE_2}
@@ -71,7 +80,7 @@ export default function GuestScreen({
             name="facebook-official"
             size={20}
             color="#3b5998"
-            style={{marginRight: Spacing.s}}
+            style={iconSocial}
           />
           <CustomText
             style={TextStyles.TEXT_STYLE_2}
@@ -85,7 +94,7 @@ export default function GuestScreen({
             name="google"
             size={20}
             color="#4285f4"
-            style={{marginRight: Spacing.s}}
+            style={iconSocial}
           />
           <CustomText
             style={TextStyles.TEXT_STYLE_2}
@@ -102,10 +111,7 @@ export default function GuestScreen({
           />
         </Pressable>
 
-        <Pressable
-          style={{marginTop: 20, alignItems: "center"}}
-          onPress={onPressLogIn}
-        >
+        <Pressable style={btnLogIn} onPress={onPressLogIn}>
           <CustomText
             style={TextStyles.TEXT_STYLE}
             text={"Log in with Email"}
@@ -114,7 +120,7 @@ export default function GuestScreen({
         </Pressable>
       </View>
 
-      <View style={{flex: 1, justifyContent: "center"}}>
+      <View style={viewTerms}>
         <CustomText
           style={TextStyles.TEXT_STYLE_4}
           text={
@@ -131,6 +137,33 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  viewHeader: {
+    flex: 1,
+  },
+  viewLogo: {
+    flex: 2,
+    alignItems: "center",
+  },
+  imgLogo: {
+    width: 71,
+    height: 84,
+  },
+  viewFoodStyles: {flex: 1, justifyContent: "center"},
+  viewWelcomeText: {
+    flex: 2,
+    justifyContent: "center",
+  },
+  viewAuthOptions: {
+    flex: 3,
+    paddingHorizontal: 70,
+  },
+  iconSocial: {
+    marginRight: Spacing.s,
+  },
+  btnLogIn: {
+    marginTop: Spacing.l,
+    alignItems: "center",
+  },
   btnSignIn: {
     borderRadius: 100,
     backgroundColor: Colors.WHITE,
@@ -143,8 +176,12 @@ const styles = StyleSheet.create({
     shadowOpacity: 1,
     alignItems: "center",
     justifyContent: "center",
-    padding: 12,
-    marginTop: 16,
+    padding: Spacing.s,
+    marginTop: Spacing.m,
     flexDirection: "row",
+  },
+  viewTerms: {
+    flex: 1,
+    justifyContent: "center",
   },
 });

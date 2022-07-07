@@ -5,6 +5,7 @@ import {RootStackParamList, RootStackScreenProps} from "../../../types";
 import GuestScreen from "../../screens/GuestScreen";
 import LoginScreen from "../../screens/LoginScreen";
 import SignUpScreen from "../../screens/SignUpScreen";
+import {TextStyles} from "../../styles";
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -22,7 +23,10 @@ export default () => {
         options={({navigation}: RootStackScreenProps<"SignUpScreen">) => ({
           headerTransparent: true,
           headerTitle: "Sign up with Email",
-          headerTitleStyle: {color: "white"},
+          headerTitleStyle: {
+            fontFamily: "proxima-bold",
+            ...TextStyles.TEXT_STYLE_5,
+          },
           headerLeft: () => (
             <Pressable onPress={() => navigation.goBack()}>
               <Ionicons
@@ -40,7 +44,10 @@ export default () => {
         options={({navigation}: RootStackScreenProps<"LoginScreen">) => ({
           headerTransparent: true,
           headerTitle: "Log in",
-          headerTitleStyle: {color: "white"},
+          headerTitleStyle: {
+            fontFamily: "proxima-bold",
+            ...TextStyles.TEXT_STYLE_5,
+          },
           headerLeft: () => (
             <Pressable onPress={() => navigation.goBack()}>
               <Ionicons
