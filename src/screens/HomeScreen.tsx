@@ -2,7 +2,7 @@ import {useQuery} from "@apollo/client";
 import {LinearGradient} from "expo-linear-gradient";
 import {StyleSheet, View, Image, Pressable, FlatList} from "react-native";
 import {Card, RootStackScreenProps} from "../../types";
-import {GET_CARDS_QUERY} from "../api/queries";
+import {GET_CARDS_QUERY} from "../graphql/queries";
 import {CustomText, Loading} from "../components/atoms";
 import {Colors, Spacing, TextStyles} from "../styles";
 

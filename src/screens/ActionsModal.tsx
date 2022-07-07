@@ -7,10 +7,10 @@ import {
   DELETE_CARD_MUTATION,
   DUPLICATE_CARD_MUTATION,
   SHARE_CARD_MUTATION,
-} from "../api/mutations";
+} from "../graphql/mutations";
 import {RootStackScreenProps} from "../../types";
 import {client} from "../../App";
-import {GET_CARDS_QUERY} from "../api/queries";
+import {GET_CARDS_QUERY} from "../graphql/queries";
 import {BlurView} from "expo-blur";
 import {Ionicons} from "@expo/vector-icons";
 

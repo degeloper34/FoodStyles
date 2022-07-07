@@ -5,7 +5,7 @@ import {RootStackParamList} from "../../types";
 import GuestNavigator from "./StackNavigators/GuestNavigator";
 import HomeNavigator from "./StackNavigators/HomeNavigator";
 
-export default function Navigation() {
+export default function MainNavigator() {
   return (
     <NavigationContainer>
       <RootNavigator />

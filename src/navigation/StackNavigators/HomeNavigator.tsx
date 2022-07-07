@@ -1,6 +1,5 @@
-import {Ionicons} from "@expo/vector-icons";
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
-import {Image, Pressable} from "react-native";
+import {Image} from "react-native";
 import {RootStackParamList, RootStackScreenProps} from "../../../types";
 import {HeaderBackIcon} from "../../components/atoms";
 import ActionsModal from "../../screens/ActionsModal";

@@ -4,7 +4,7 @@ import {Pressable, StyleSheet} from "react-native";
 import {CustomText, Loading} from "../components/atoms";
 import {Spacing, TextStyles} from "../styles";
 import {useHeaderHeight} from "@react-navigation/elements";
-import {SIGN_UP_WITH_EMAIL_MUTATION} from "../api/mutations";
+import {SIGN_UP_WITH_EMAIL_MUTATION} from "../graphql/mutations";
 import {Controller, useForm} from "react-hook-form";
 import {CustomTextInput} from "../components/molecules";
 import {SignUpForm} from "../../types";

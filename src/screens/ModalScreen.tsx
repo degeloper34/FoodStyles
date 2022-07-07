@@ -3,12 +3,12 @@ import {Pressable, StyleSheet} from "react-native";
 import {CustomText, Loading} from "../components/atoms";
 import {Spacing, TextStyles} from "../styles";
 import {useMutation} from "@apollo/client";
-import {CREATE_CARD_MUTATION} from "../api/mutations";
+import {CREATE_CARD_MUTATION} from "../graphql/mutations";
 import {Controller, useForm} from "react-hook-form";
 import {CustomTextInput} from "../components/molecules";
 import {CreateCardForm, RootStackScreenProps} from "../../types";
 import {client} from "../../App";
-import {GET_CARDS_QUERY} from "../api/queries";
+import {GET_CARDS_QUERY} from "../graphql/queries";
 
 export default function ModalScreen({
   navigation,

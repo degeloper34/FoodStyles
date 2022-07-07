@@ -7,7 +7,7 @@ import {useMutation} from "@apollo/client";
 import {LoginForm, RootStackScreenProps} from "../../types";
 import {CustomTextInput} from "../components/molecules";
 import {Controller, useForm} from "react-hook-form";
-import {LOGIN_WITH_EMAIL_MUTATION} from "../api/mutations";
+import {LOGIN_WITH_EMAIL_MUTATION} from "../graphql/mutations";
 
 export default function LoginScreen({
   navigation,
