@@ -8,8 +8,8 @@ It’s a tutorial mobile app created by degeloper (Ege Barış Akyürek)
 - Language: TypeScript, JavaScript
 - State Management: Redux
 - Testing: Jest
-- HTTP Client: Axios
-- Navigation: react-navigation
+- Query Language: GraphQL
+- Forms: React Hook Form
 
 ## iOS Demo Video
 
